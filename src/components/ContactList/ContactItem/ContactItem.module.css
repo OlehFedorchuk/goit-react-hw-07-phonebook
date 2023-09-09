@@ -16,12 +16,8 @@
 .button {
     border: 0px;
     max-width: 120px;
-    padding: 8px 8px;
-    border-radius: 10px;
-    background: #FF9EAA;
+    border-radius: 50%;
     color: #F1F6F9;
-    font-size: 14px;
-    font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
     transition-property: background-color;
@@ -35,4 +31,8 @@
 
 .button:active {
     background-color: #ffbec6;
+}
+.x{
+    font-size: 30px;
+    color: red;
 }
