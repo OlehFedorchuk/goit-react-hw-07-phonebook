@@ -10,7 +10,7 @@ import { Error } from './components/Error/Error';
 import { ContactForm } from './components/Form/form';
 import { ContactList } from './components/ContactList/ContactList';
 import { Filter } from './components/Filter/Filter';
-import css from './App.module.css';
+import css from './App.css';
 import { Total } from './components/Total/Total';
 
 export const App = () => {

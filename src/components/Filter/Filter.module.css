@@ -12,7 +12,7 @@
     max-width: 480px;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid var(--border-default, #8C9196);
+    border: 1px solid  #8C9196;
     background-color: transparent;
     transition-property: border-radius, background-color, padding;
     transition-duration: 250ms; 
@@ -21,11 +21,5 @@
 
 .input:focus {
     padding: 4px 0 4px 8px;
-    border-radius: 5px;
-    border: 1.5px solid var(--blueee, #232020);
-    background: rgba(100, 204, 197, 0.50);
-}
-
-.input::placeholder {
-    font-size: 16px;
+    background: rgba(149, 152, 152, 0.5);
 }

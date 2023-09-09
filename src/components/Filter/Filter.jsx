@@ -10,7 +10,7 @@ export const Filter = ({ onFilter }) => {
 
     return (
       <label className={css.label}>
-        Find contacts by name
+       Find contacts by name
         <input type="text" onChange={handleFilter} className={css.input} placeholder='Name' />
       </label>
     );
