@@ -5,13 +5,13 @@ import { makeFilter } from 'redux/redusers/filterSlice';
 import { fetchContacts, addContact, deleteContact } from 'redux/operations/contactsThunk';
 import Notiflix from 'notiflix';
 
-import { Loader } from './Loader/Loader';
-import { Error } from './Error/Error';
-import { ContactForm } from './Form/form';
-import { ContactList } from './ContactList/ContactList';
-import { Filter } from './Filter/Filter';
+import { Loader } from './components/Loader/Loader';
+import { Error } from './components/Error/Error';
+import { ContactForm } from './components/Form/form';
+import { ContactList } from './components/ContactList/ContactList';
+import { Filter } from './components/Filter/Filter';
 import css from './App.module.css';
-import { Total } from './Total/Total';
+import { Total } from './components/Total/Total';
 
 export const App = () => {
   const contacts = useSelector(contactsSelector);
