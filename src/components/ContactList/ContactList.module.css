@@ -1,13 +1,8 @@
-.label {
-    display: flex;
-    max-width: 480px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 16px;
-}
 
 .input {
+    display: flex;
     margin-top: 4px;
+    margin-bottom: 16px;
     padding: 4px 0 4px 16px;
     max-width: 480px;
     width: 100%;

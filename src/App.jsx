@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { contactsSelector, errorSelector, filterSelector, isLoadingSelector } from 'redux/selectors/selectors';
-import { makeFilter } from 'redux/redusers/filterSlice';
 import { fetchContacts, addContact, deleteContact } from 'redux/operations/contactsThunk';
 import Notiflix from 'notiflix';
 
@@ -9,7 +8,6 @@ import { Loader } from './components/Loader/Loader';
 import { Error } from './components/Error/Error';
 import { ContactForm } from './components/Form/form';
 import { ContactList } from './components/ContactList/ContactList';
-import { Filter } from './components/Filter/Filter';
 import css from './App.css';
 import { Total } from './components/Total/Total';
 
@@ -48,10 +46,6 @@ export const App = () => {
   };
 
 
-  const handleFilter = e => {
-    dispatch(makeFilter(e))
-  };
-
   return (
     <section>
     <div className={css.container}>
@@ -59,7 +53,6 @@ export const App = () => {
       <ContactForm onAddContact={handleAddContact} />
       <h2 className={css.titleh2}>Contacts</h2>
       <Total contacts={contacts}/>
-      <Filter onFilter={handleFilter} />
       {isLoading ? 
       <Loader /> : 
       <ContactList
